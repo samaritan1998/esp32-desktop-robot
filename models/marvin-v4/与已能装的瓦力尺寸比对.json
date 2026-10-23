@@ -1,0 +1,26 @@
+{
+  "reference": "Original boxbot-1.83 WALL-E model; user previously reported it usable.",
+  "original_head_stl_regeneration_bytes_identical": true,
+  "screen_window_identical": true,
+  "window_corner_radius_mm": 5.1,
+  "reference_rounded_pocket_width_height_mm": [
+    44.800000000000004,
+    37.800000000000004
+  ],
+  "marvin_rectangular_passage_width_height_mm": [
+    47.6,
+    41.6
+  ],
+  "additional_clearance_per_side_mm": [
+    1.3999999999999986,
+    1.8999999999999986
+  ],
+  "reference_usable_depth_mm": 19.8,
+  "marvin_usable_depth_to_contact_pads_mm": 21.8,
+  "aligned_reference_usable_volume_collisions_mm3": {
+    "01_head_front": 0.0,
+    "02_head_back": 0.0
+  },
+  "physical_marvin_fit_verified": false,
+  "scope": "Digital comparison to the reported working reference; does not measure a different printer or user sample."
+}

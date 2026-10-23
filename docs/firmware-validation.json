@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-24",
+  "upstream": "xiaozhi-esp32 v2.5.2",
+  "esp_idf": "6.1.0",
+  "target": "esp32s3",
+  "upstream_host_tests_passed": 110,
+  "source_preparation_with_cached_archive_passed": true,
+  "source_preparation_with_fresh_download_passed": true,
+  "font_source_git_blob_verified": true,
+  "face_frames_rendered_and_reviewed": 32,
+  "dependency_lock_bytes_unchanged": true,
+  "board_builds": [
+    {
+      "board": "marvin-183",
+      "build_passed": true,
+      "source_matches_public_board": true,
+      "app_bytes": 2768928,
+      "app_sha256": "88aa085b4705d7573127d90b86fd3b4a109a04752c053746e6ceb6044fbc0762",
+      "build_size_summary": [
+        "xiaozhi.bin binary size 0x2a4020 bytes. Smallest app partition is 0x3f0000 bytes. 0x14bfe0 bytes (33%) free."
+      ],
+      "hardware_tested_after_font_change": false
+    },
+    {
+      "board": "walle-183",
+      "build_passed": true,
+      "source_matches_public_board": true,
+      "app_bytes": 2767328,
+      "app_sha256": "06edb2b640f6bd33f7954a835f5cf9a563473c073ea3e5fc7fdce0deaf33c378",
+      "build_size_summary": [
+        "xiaozhi.bin binary size 0x2a39e0 bytes. Smallest app partition is 0x3f0000 bytes. 0x14c620 bytes (33%) free."
+      ],
+      "hardware_tested_after_font_change": false
+    }
+  ],
+  "firmware_binaries_distributed": false,
+  "device_flashed_in_this_release_process": false
+}

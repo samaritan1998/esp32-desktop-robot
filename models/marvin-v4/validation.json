@@ -1,0 +1,389 @@
+{
+  "date": "2026-10-23",
+  "model_revision": "Marvin V4, unchanged main parts",
+  "units": "mm",
+  "physical_fit_verified": false,
+  "printer_slicer_verified": false,
+  "reference_fit_comparison": {
+    "reference": "Original boxbot-1.83 WALL-E model; user previously reported it usable.",
+    "original_head_stl_regeneration_bytes_identical": true,
+    "screen_window_identical": true,
+    "window_corner_radius_mm": 5.1,
+    "reference_rounded_pocket_width_height_mm": [
+      44.800000000000004,
+      37.800000000000004
+    ],
+    "marvin_rectangular_passage_width_height_mm": [
+      47.6,
+      41.6
+    ],
+    "additional_clearance_per_side_mm": [
+      1.3999999999999986,
+      1.8999999999999986
+    ],
+    "reference_usable_depth_mm": 19.8,
+    "marvin_usable_depth_to_contact_pads_mm": 21.8,
+    "aligned_reference_usable_volume_collisions_mm3": {
+      "01_head_front": 0.0,
+      "02_head_back": 0.0
+    },
+    "physical_marvin_fit_verified": false,
+    "scope": "Digital comparison to the reported working reference; does not measure a different printer or user sample."
+  },
+  "main_parts": {
+    "01_head_front": {
+      "sha256": "accb7849161033744935b22fa17d0adb5d2a835c6d20b04e2e22d57af751fca1",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 11978,
+      "bbox_print_mm": [
+        [
+          -41.9877,
+          -30.0,
+          0.0
+        ],
+        [
+          41.9877,
+          30.0,
+          29.5
+        ]
+      ],
+      "volume_mm3": 18296.18,
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    "02_head_back": {
+      "sha256": "1fa71d534f6d032a4bf81929a70175238831c38effef0c98261df51029a4700c",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 6818,
+      "bbox_print_mm": [
+        [
+          -39.4096,
+          -28.1497,
+          0.0
+        ],
+        [
+          39.4096,
+          28.1497,
+          15.6
+        ]
+      ],
+      "volume_mm3": 11405.74,
+      "print_rotation_deg": [
+        -90,
+        0,
+        0
+      ]
+    },
+    "03_body_shell": {
+      "sha256": "5eb763446603c885c7fd577f90b8440795bc524ee4ac63359c88a62bad914e9f",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 5364,
+      "bbox_print_mm": [
+        [
+          -17.0,
+          -11.0,
+          0.0
+        ],
+        [
+          17.0,
+          11.0,
+          21.0
+        ]
+      ],
+      "volume_mm3": 4931.14,
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    "04_body_back": {
+      "sha256": "8d675ee82fe910a6bd9b5855332dfaed9830bbab0b634ba5fdcbd19f7e2293ed",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 1876,
+      "bbox_print_mm": [
+        [
+          -16.0,
+          -10.0,
+          0.0
+        ],
+        [
+          16.0,
+          10.0,
+          2.4
+        ]
+      ],
+      "volume_mm3": 1302.05,
+      "print_rotation_deg": [
+        -90,
+        0,
+        0
+      ]
+    },
+    "05_arm_left": {
+      "sha256": "37437946bf17152fd2411f6c50054dc62e28a50bacc5ee01a1547698c9c02aa5",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 4056,
+      "bbox_print_mm": [
+        [
+          -10.6,
+          -5.0,
+          0.0
+        ],
+        [
+          10.6,
+          5.0,
+          14.5
+        ]
+      ],
+      "volume_mm3": 1038.73,
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ]
+    },
+    "06_arm_right": {
+      "sha256": "201d06a9452a82d042f34911b76c5dadd6e2e459eea08e9c9bdfa49d44e10d23",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 4056,
+      "bbox_print_mm": [
+        [
+          -10.6,
+          -5.0,
+          0.0
+        ],
+        [
+          10.6,
+          5.0,
+          14.5
+        ]
+      ],
+      "volume_mm3": 1038.73,
+      "print_rotation_deg": [
+        0,
+        90,
+        0
+      ]
+    },
+    "07_foot_left": {
+      "sha256": "600760ebac09696660e700113b2b0cc4d58137f9ba54e3123cb463e3f5b08336",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 2508,
+      "bbox_print_mm": [
+        [
+          -10.0,
+          -20.0,
+          0.0
+        ],
+        [
+          10.0,
+          20.0,
+          17.0
+        ]
+      ],
+      "volume_mm3": 7179.7,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "08_foot_right": {
+      "sha256": "fd821ba15dafbef7049855f1ca4f4f8bf9fa5154a7ac2d00ea7790e99c7298d9",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 2508,
+      "bbox_print_mm": [
+        [
+          -10.0,
+          -20.0,
+          0.0
+        ],
+        [
+          10.0,
+          20.0,
+          17.0
+        ]
+      ],
+      "volume_mm3": 7179.7,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "09_neck": {
+      "sha256": "bf6b116c714b2e795624347f26f8351635d3054c4b289cd784e2cba1493f23ea",
+      "reloaded_checked": true,
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 564,
+      "bbox_print_mm": [
+        [
+          -6.0,
+          -5.0,
+          0.0
+        ],
+        [
+          6.0,
+          5.0,
+          10.0
+        ]
+      ],
+      "volume_mm3": 591.84,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "accessories": {
+    "spacer_0p6mm": {
+      "quantity": 2,
+      "sha256": "1d4302c92d02bbd0eb85ef4bc6345e362719730b980b9e185403b7cd87795dfd",
+      "bbox_mm": [
+        24.0,
+        4.0,
+        0.6
+      ],
+      "volume_mm3": 57.6,
+      "watertight": true,
+      "components": 1,
+      "z_min_mm": 0.0
+    },
+    "spacer_1p0mm": {
+      "quantity": 2,
+      "sha256": "4223697216a345c5de3bbfbd42006bd3efb71e3345843ec5f32ae65a545156cd",
+      "bbox_mm": [
+        24.0,
+        4.0,
+        1.0
+      ],
+      "volume_mm3": 96.0,
+      "watertight": true,
+      "components": 1,
+      "z_min_mm": 0.0
+    },
+    "spacer_1p4mm": {
+      "quantity": 2,
+      "sha256": "060334397ffd714b39e8f03452d2caaa8f7c204d54c05e3499f08220f26261b6",
+      "bbox_mm": [
+        24.0,
+        4.0,
+        1.4
+      ],
+      "volume_mm3": 134.4,
+      "watertight": true,
+      "components": 1,
+      "z_min_mm": 0.0
+    },
+    "spacer_1p8mm": {
+      "quantity": 2,
+      "sha256": "2e713e5bfda351139dc28534d1498be996638e37d2227b7693f5499abb8671f4",
+      "bbox_mm": [
+        24.0,
+        4.0,
+        1.8
+      ],
+      "volume_mm3": 172.8,
+      "watertight": true,
+      "components": 1,
+      "z_min_mm": 0.0
+    },
+    "spacer_2p2mm": {
+      "quantity": 2,
+      "sha256": "dcc19bf823295d50e3e531ce2d672774642ec698ba2e07dce1dfcc814872cebc",
+      "bbox_mm": [
+        24.0,
+        4.0,
+        2.2
+      ],
+      "volume_mm3": 211.2,
+      "watertight": true,
+      "components": 1,
+      "z_min_mm": 0.0
+    },
+    "09b_neck_loose_5p8": {
+      "quantity": 1,
+      "sha256": "cb8bf926a0a7a2118182ca733694dedca67ef0a43b5fc98bbad356bc740dce90",
+      "bbox_mm": [
+        12.0,
+        10.0,
+        10.0
+      ],
+      "volume_mm3": 580.545,
+      "watertight": true,
+      "components": 1,
+      "z_min_mm": 0.0
+    }
+  },
+  "plate": {
+    "unique_meshes": 15,
+    "instances": 20,
+    "loaded_with_independent_3mf_reader": true,
+    "bounds_mm": [
+      [
+        5,
+        5,
+        0
+      ],
+      [
+        174,
+        143,
+        29.5
+      ]
+    ],
+    "bbox_overlap": false,
+    "all_meshes_watertight": true,
+    "units": "millimeter",
+    "machine_profile_or_supports_included": false
+  },
+  "main_part_stl_bytes_identical_to_v4": true,
+  "source_sha256": {
+    "parameters.json": "e4c9c1c7b24bb2e1fbab2d6cbafef478c7b25c01fbb7790e897978acce3c2392",
+    "build_plate.py": "78ac77a688c958e2b1998c543516284498b197915153578fb021ab5a48eb3647",
+    "requirements.txt": "ec7242dff0fbc0a179df35b70edae676ea9db5754a33f9186a6c39385c5a9b26",
+    "build_accessories.py": "ffbfdca886ac46a933d3146677b8711dcba17683e36642055ad2caae6d6e034e",
+    "build_model.py": "207c92c1d761ba4d8433d0746deb17d869c53f1fb7cfce3ee0bd063925d9a927",
+    "marvin.scad": "b3a932e21863f0898390b157b50846421ce72b8e9de7c99470bf89207543aa58"
+  },
+  "accessory_and_plate_source_regeneration_verified": true
+}

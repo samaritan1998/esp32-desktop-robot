@@ -1,0 +1,5 @@
+*.stl binary
+*.glb binary
+*.png binary
+*.3mf binary
+*.patch -whitespace

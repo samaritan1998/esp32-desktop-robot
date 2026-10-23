@@ -1,0 +1,13 @@
+{
+  "source_regeneration_stl_bytes_identical": true,
+  "watertight_single_component_z0_checked": true,
+  "walle_stl_count": 10,
+  "marvin_main_stl_count": 9,
+  "marvin_accessory_stl_count": 6,
+  "marvin_3mf_unique_meshes": 15,
+  "marvin_3mf_print_instances": 20,
+  "marvin_3mf_rebuilt_geometry_identical": true,
+  "physical_marvin_fit_verified": false,
+  "printer_slicing_verified": false,
+  "preview_glb_meters_verified": true
+}

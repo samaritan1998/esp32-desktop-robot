@@ -1,0 +1,80 @@
+{
+  "spacer_0p6mm": {
+    "quantity": 2,
+    "sha256": "1d4302c92d02bbd0eb85ef4bc6345e362719730b980b9e185403b7cd87795dfd",
+    "bbox_mm": [
+      24.0,
+      4.0,
+      0.6
+    ],
+    "volume_mm3": 57.6,
+    "watertight": true,
+    "components": 1,
+    "z_min_mm": 0.0
+  },
+  "spacer_1p0mm": {
+    "quantity": 2,
+    "sha256": "4223697216a345c5de3bbfbd42006bd3efb71e3345843ec5f32ae65a545156cd",
+    "bbox_mm": [
+      24.0,
+      4.0,
+      1.0
+    ],
+    "volume_mm3": 96.0,
+    "watertight": true,
+    "components": 1,
+    "z_min_mm": 0.0
+  },
+  "spacer_1p4mm": {
+    "quantity": 2,
+    "sha256": "060334397ffd714b39e8f03452d2caaa8f7c204d54c05e3499f08220f26261b6",
+    "bbox_mm": [
+      24.0,
+      4.0,
+      1.4
+    ],
+    "volume_mm3": 134.4,
+    "watertight": true,
+    "components": 1,
+    "z_min_mm": 0.0
+  },
+  "spacer_1p8mm": {
+    "quantity": 2,
+    "sha256": "2e713e5bfda351139dc28534d1498be996638e37d2227b7693f5499abb8671f4",
+    "bbox_mm": [
+      24.0,
+      4.0,
+      1.8
+    ],
+    "volume_mm3": 172.8,
+    "watertight": true,
+    "components": 1,
+    "z_min_mm": 0.0
+  },
+  "spacer_2p2mm": {
+    "quantity": 2,
+    "sha256": "dcc19bf823295d50e3e531ce2d672774642ec698ba2e07dce1dfcc814872cebc",
+    "bbox_mm": [
+      24.0,
+      4.0,
+      2.2
+    ],
+    "volume_mm3": 211.2,
+    "watertight": true,
+    "components": 1,
+    "z_min_mm": 0.0
+  },
+  "09b_neck_loose_5p8": {
+    "quantity": 1,
+    "sha256": "cb8bf926a0a7a2118182ca733694dedca67ef0a43b5fc98bbad356bc740dce90",
+    "bbox_mm": [
+      12.0,
+      10.0,
+      10.0
+    ],
+    "volume_mm3": 580.545,
+    "watertight": true,
+    "components": 1,
+    "z_min_mm": 0.0
+  }
+}

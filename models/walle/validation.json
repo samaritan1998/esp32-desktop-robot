@@ -1,0 +1,323 @@
+{
+  "units": "mm",
+  "parameters": {
+    "case_w": 44.2,
+    "case_h": 37.2,
+    "case_d": 19.0,
+    "case_clearance": 0.3,
+    "window_w": 36.5,
+    "window_h": 31.1,
+    "head_w": 54.0,
+    "head_h": 43.0,
+    "head_d": 26.0,
+    "body_w": 50.0,
+    "body_d": 34.0,
+    "body_h": 34.0,
+    "wall": 2.4,
+    "neck_pin_d": 6.2,
+    "neck_socket_d": 6.5,
+    "track_pin_d": 4.0,
+    "track_socket_d": 4.4,
+    "arm_pin_d": 4.2,
+    "arm_socket_d": 4.6,
+    "screw_pilot_d": 1.7,
+    "screw_clear_d": 2.4
+  },
+  "parts": {
+    "01_body_shell": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 5378,
+      "bbox_print_mm": [
+        [
+          -25.0,
+          -17.0,
+          0.0
+        ],
+        [
+          25.0,
+          17.0,
+          34.0
+        ]
+      ],
+      "volume_mm3": 15001.83,
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    "02_body_back": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 2152,
+      "bbox_print_mm": [
+        [
+          -25.0,
+          -17.0,
+          0.0
+        ],
+        [
+          25.0,
+          17.0,
+          2.4
+        ]
+      ],
+      "volume_mm3": 3692.69,
+      "print_rotation_deg": [
+        -90,
+        0,
+        0
+      ]
+    },
+    "03_track_left": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 3236,
+      "bbox_print_mm": [
+        [
+          -8.8,
+          -24.0,
+          0.0
+        ],
+        [
+          8.8,
+          24.0,
+          16.0
+        ]
+      ],
+      "volume_mm3": 9773.61,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "04_track_right": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 3236,
+      "bbox_print_mm": [
+        [
+          -8.8,
+          -24.0,
+          0.0
+        ],
+        [
+          8.8,
+          24.0,
+          16.0
+        ]
+      ],
+      "volume_mm3": 9773.61,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "05_arm_left": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 1112,
+      "bbox_print_mm": [
+        [
+          -10.0,
+          -7.0,
+          0.0
+        ],
+        [
+          10.0,
+          7.0,
+          11.5
+        ]
+      ],
+      "volume_mm3": 1163.09,
+      "print_rotation_deg": [
+        0,
+        -90,
+        0
+      ]
+    },
+    "06_arm_right": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 1112,
+      "bbox_print_mm": [
+        [
+          -10.0,
+          -7.0,
+          0.0
+        ],
+        [
+          10.0,
+          7.0,
+          11.5
+        ]
+      ],
+      "volume_mm3": 1163.09,
+      "print_rotation_deg": [
+        0,
+        90,
+        0
+      ]
+    },
+    "07_neck": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 564,
+      "bbox_print_mm": [
+        [
+          -6.0,
+          -5.0,
+          0.0
+        ],
+        [
+          6.0,
+          5.0,
+          13.0
+        ]
+      ],
+      "volume_mm3": 733.25,
+      "print_rotation_deg": [
+        0,
+        0,
+        0
+      ]
+    },
+    "08_head_shell": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 2170,
+      "bbox_print_mm": [
+        [
+          -27.0,
+          -23.5,
+          0.0
+        ],
+        [
+          27.0,
+          23.5,
+          26.0
+        ]
+      ],
+      "volume_mm3": 16088.67,
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    },
+    "09_head_back": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 2200,
+      "bbox_print_mm": [
+        [
+          -27.0,
+          -21.5,
+          0.0
+        ],
+        [
+          27.0,
+          21.5,
+          7.0
+        ]
+      ],
+      "volume_mm3": 5549.82,
+      "print_rotation_deg": [
+        -90,
+        0,
+        0
+      ]
+    },
+    "10_fit_coupon": {
+      "status": "Error.NoError",
+      "components": 1,
+      "watertight": true,
+      "winding_consistent": true,
+      "triangles": 834,
+      "bbox_print_mm": [
+        [
+          -27.0,
+          -21.5,
+          0.0
+        ],
+        [
+          27.0,
+          21.5,
+          6.0
+        ]
+      ],
+      "volume_mm3": 4294.55,
+      "print_rotation_deg": [
+        90,
+        0,
+        0
+      ]
+    }
+  },
+  "interference": {
+    "08_head_shell_versus_stock_case_mm3": 0.0,
+    "09_head_back_versus_stock_case_mm3": 0.0,
+    "01_body_shell_versus_02_body_back_mm3": 0.0,
+    "01_body_shell_versus_03_track_left_mm3": 0.0,
+    "01_body_shell_versus_04_track_right_mm3": 0.0,
+    "01_body_shell_versus_05_arm_left_mm3": 0.0,
+    "01_body_shell_versus_06_arm_right_mm3": -0.0,
+    "01_body_shell_versus_07_neck_mm3": 0.0,
+    "01_body_shell_versus_08_head_shell_mm3": 0.0,
+    "01_body_shell_versus_09_head_back_mm3": 0.0,
+    "02_body_back_versus_03_track_left_mm3": 0.0,
+    "02_body_back_versus_04_track_right_mm3": 0.0,
+    "02_body_back_versus_05_arm_left_mm3": 0.0,
+    "02_body_back_versus_06_arm_right_mm3": 0.0,
+    "02_body_back_versus_07_neck_mm3": 0.0,
+    "02_body_back_versus_08_head_shell_mm3": 0.0,
+    "02_body_back_versus_09_head_back_mm3": 0.0,
+    "03_track_left_versus_04_track_right_mm3": 0.0,
+    "03_track_left_versus_05_arm_left_mm3": 0.0,
+    "03_track_left_versus_06_arm_right_mm3": 0.0,
+    "03_track_left_versus_07_neck_mm3": 0.0,
+    "03_track_left_versus_08_head_shell_mm3": 0.0,
+    "03_track_left_versus_09_head_back_mm3": 0.0,
+    "04_track_right_versus_05_arm_left_mm3": 0.0,
+    "04_track_right_versus_06_arm_right_mm3": 0.0,
+    "04_track_right_versus_07_neck_mm3": 0.0,
+    "04_track_right_versus_08_head_shell_mm3": 0.0,
+    "04_track_right_versus_09_head_back_mm3": 0.0,
+    "05_arm_left_versus_06_arm_right_mm3": 0.0,
+    "05_arm_left_versus_07_neck_mm3": 0.0,
+    "05_arm_left_versus_08_head_shell_mm3": 0.0,
+    "05_arm_left_versus_09_head_back_mm3": 0.0,
+    "06_arm_right_versus_07_neck_mm3": 0.0,
+    "06_arm_right_versus_08_head_shell_mm3": 0.0,
+    "06_arm_right_versus_09_head_back_mm3": 0.0,
+    "07_neck_versus_08_head_shell_mm3": 0.0,
+    "07_neck_versus_09_head_back_mm3": 0.0,
+    "08_head_shell_versus_09_head_back_mm3": 0.0
+  },
+  "assembled_size_mm": [
+    78.0,
+    48.0,
+    98.0
+  ]
+}

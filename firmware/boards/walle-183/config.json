@@ -1,0 +1,15 @@
+{
+  "type": "walle-183",
+  "target": "esp32s3",
+  "builds": [
+    {
+      "name": "walle-183",
+      "sdkconfig_append": [
+        "CONFIG_USE_WECHAT_MESSAGE_STYLE=n",
+        "CONFIG_USE_DEVICE_AEC=y",
+        "CONFIG_LV_USE_CANVAS=y",
+        "CONFIG_ESP_CONSOLE_USB_SERIAL_JTAG=y"
+      ]
+    }
+  ]
+}

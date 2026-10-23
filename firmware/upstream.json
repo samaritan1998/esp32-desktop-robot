@@ -1,0 +1,13 @@
+{
+  "repository": "https://github.com/78/xiaozhi-esp32",
+  "tag": "v2.5.2",
+  "commit": "49b4380b3faa0ceadd28a3e78aaf0f311c46c57e",
+  "archive_url": "https://codeload.github.com/78/xiaozhi-esp32/tar.gz/refs/tags/v2.5.2",
+  "archive_sha256": "a6c8dcf3655e949f1d2b8fafddd6c26db917eddb1dd04470581c30b05c706e8a",
+  "core_files_sha256": {
+    "main/CMakeLists.txt": "1980e2da8ae4ffabbdd018dd5d6086ff076e5bc78988e06f88b089ff0a4209dc",
+    "main/Kconfig.projbuild": "342a48aacf175a43f1efeac4091e433875178cd736568017a79e7598ce448653",
+    "main/application.cc": "6e2de7d86a482e1c9589be1835a022b08c481b124e3cf0e1395eae758d199457"
+  },
+  "esp_idf": "v6.1.0"
+}

@@ -1,0 +1,23 @@
+{
+  "case_w": 44.2,
+  "case_h": 37.2,
+  "case_d": 19.0,
+  "case_clearance": 0.3,
+  "window_w": 36.5,
+  "window_h": 31.1,
+  "head_w": 54.0,
+  "head_h": 43.0,
+  "head_d": 26.0,
+  "body_w": 50.0,
+  "body_d": 34.0,
+  "body_h": 34.0,
+  "wall": 2.4,
+  "neck_pin_d": 6.2,
+  "neck_socket_d": 6.5,
+  "track_pin_d": 4.0,
+  "track_socket_d": 4.4,
+  "arm_pin_d": 4.2,
+  "arm_socket_d": 4.6,
+  "screw_pilot_d": 1.7,
+  "screw_clear_d": 2.4
+}

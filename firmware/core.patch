@@ -1,0 +1,66 @@
+--- a/main/CMakeLists.txt
++++ b/main/CMakeLists.txt
+@@ -407,6 +407,16 @@
+     set(BOARD_DIR "waveshare/esp32-s3-touch-amoled-1.75")
+     set(BUILTIN_TEXT_FONT font_noto_sans_basic_30_4)
+     set(BUILTIN_ICON_FONT font_material_symbols_30_4)
++    set(DEFAULT_EMOJI_COLLECTION noto-color-emoji_64)
++elseif(CONFIG_BOARD_TYPE_MARVIN_183)
++    set(BOARD_DIR "marvin-183")
++    set(BUILTIN_TEXT_FONT font_noto_sans_basic_16_4)
++    set(BUILTIN_ICON_FONT font_material_symbols_16_4)
++    set(DEFAULT_EMOJI_COLLECTION noto-color-emoji_64)
++elseif(CONFIG_BOARD_TYPE_WALLE_183)
++    set(BOARD_DIR "walle-183")
++    set(BUILTIN_TEXT_FONT font_noto_sans_basic_16_4)
++    set(BUILTIN_ICON_FONT font_material_symbols_16_4)
+     set(DEFAULT_EMOJI_COLLECTION noto-color-emoji_64)
+ elseif(CONFIG_BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_LCD_1_83)
+     set(BOARD_DIR "waveshare/esp32-s3-touch-lcd-1.83")
+--- a/main/Kconfig.projbuild
++++ b/main/Kconfig.projbuild
+@@ -572,6 +572,12 @@
+     config BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_LCD_1_83
+         bool "Waveshare ESP32-S3-Touch-LCD-1.83"
+         depends on IDF_TARGET_ESP32S3
++    config BOARD_TYPE_MARVIN_183
++        bool "Waveshare ESP32-S3-Touch-LCD-1.83 Marvin"
++        depends on IDF_TARGET_ESP32S3
++    config BOARD_TYPE_WALLE_183
++        bool "Waveshare ESP32-S3-Touch-LCD-1.83 WALL-E"
++        depends on IDF_TARGET_ESP32S3
+     config BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_LCD_1_85
+         bool "Waveshare ESP32-S3-Touch-LCD-1.85"
+         depends on IDF_TARGET_ESP32S3
+@@ -997,7 +1003,7 @@
+     bool "Enable Device-Side AEC"
+     default n
+         depends on USE_AUDIO_PROCESSOR && (BOARD_TYPE_ESP32_S3_BOX_3 || BOARD_TYPE_ESP32_S3_BOX || BOARD_TYPE_ESP32_S3_BOX_LITE \
+-        || BOARD_TYPE_LICHUANG_DEV_S3 || BOARD_TYPE_RYMCU_BIGSMART || BOARD_TYPE_ESP32_S3_KORVO_2_V3 || BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_AMOLED_1_75|| BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_AMOLED_1_75C || BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_LCD_1_83\
++        || BOARD_TYPE_LICHUANG_DEV_S3 || BOARD_TYPE_RYMCU_BIGSMART || BOARD_TYPE_ESP32_S3_KORVO_2_V3 || BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_AMOLED_1_75|| BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_AMOLED_1_75C || BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_LCD_1_83 || BOARD_TYPE_WALLE_183 || BOARD_TYPE_MARVIN_183\
+         || BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_AMOLED_2_06 || BOARD_TYPE_WAVESHARE_ESP32_S3_TOUCH_LCD_4B || BOARD_TYPE_WAVESHARE_ESP32_P4_WIFI6_TOUCH_LCD_4B || BOARD_TYPE_WAVESHARE_ESP32_P4_WIFI6_TOUCH_LCD_4_3 || BOARD_TYPE_WAVESHARE_ESP32_P4_WIFI6_TOUCH_LCD_5 \
+         || BOARD_TYPE_WAVESHARE_ESP32_P4_WIFI6_TOUCH_LCD_7B || BOARD_TYPE_CHD_ESP32S3_BOX \
+         || BOARD_TYPE_WAVESHARE_ESP32_P4_WIFI6_TOUCH_LCD_3_4C || BOARD_TYPE_WAVESHARE_ESP32_P4_WIFI6_TOUCH_LCD_4C || BOARD_TYPE_ESP32_S3_LCD_EV_BOARD_2 || BOARD_TYPE_YUNLIAO_S3 \
+--- a/main/application.cc
++++ b/main/application.cc
+@@ -554,6 +554,12 @@
+     protocol_->OnIncomingAudio([this](std::unique_ptr<AudioStreamPacket> packet) {
+         if (GetDeviceState() == kDeviceStateSpeaking) {
+             audio_service_.PushPacketToDecodeQueue(std::move(packet));
++        } else {
++            static unsigned dropped = 0;
++            if (++dropped % 50 == 1) {
++                ESP_LOGW(TAG, "AUDIO_DIAG dropped=%u state=%d bytes=%u", dropped,
++                         int(GetDeviceState()), unsigned(packet->payload.size()));
++            }
+         }
+     });
+ 
+@@ -621,6 +627,7 @@
+             if (!cJSON_IsString(state)) {
+                 return;
+             }
++            ESP_LOGI(TAG, "AUDIO_DIAG tts=%s state=%d", state->valuestring, int(GetDeviceState()));
+             if (strcmp(state->valuestring, "start") == 0) {
+                 Schedule([this]() {
+                     aborted_ = false;

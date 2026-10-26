@@ -21,6 +21,9 @@ def main():
         stem = f'{robot}-print-kit-v{args.version}'
         path = args.out/(stem+'.zip')
         selected = [ROOT/'LICENSE', ROOT/'THIRD_PARTY_NOTICES.md', ROOT/'models/LICENSE.md']
+        guide = ROOT/'docs/images'/(robot+'-assembly-guide.png')
+        if guide.exists():
+            selected.extend([guide, ROOT/'docs/images/LICENSE.md'])
         selected.extend((ROOT/'LICENSES').glob('*.txt'))
         selected.extend(p for p in (ROOT/'models'/robot).rglob('*') if p.is_file()
                         and '__pycache__' not in p.parts and p.suffix != '.pyc')

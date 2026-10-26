@@ -24,6 +24,9 @@ def main():
         guide = ROOT/'docs/images'/(robot+'-assembly-guide.png')
         if guide.exists():
             selected.extend([guide, ROOT/'docs/images/LICENSE.md'])
+        shim_guide = ROOT/'docs/images'/(robot+'-shim-guide.png')
+        if shim_guide.exists():
+            selected.append(shim_guide)
         selected.extend((ROOT/'LICENSES').glob('*.txt'))
         selected.extend(p for p in (ROOT/'models'/robot).rglob('*') if p.is_file()
                         and '__pycache__' not in p.parts and p.suffix != '.pyc')

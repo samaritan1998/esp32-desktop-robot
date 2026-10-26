@@ -6,6 +6,8 @@
 
 **安装看图：**[Marvin V4 装配图](docs/images/marvin-v4-assembly-guide.png) · [WALL-E 装配图](docs/images/walle-assembly-guide.png)。圆圈编号对应 STL 文件，图中包含原装黑壳朝向、垫片与软垫、USB 接线顺序及螺丝规格。
 
+屏幕黑壳在 Marvin 头里前后晃动时，查看 [垫片位置放大图](docs/images/marvin-v4-shim-guide.png)：上下两条同厚硬垫片，软泡棉朝黑壳背面，按实际合盖情况调厚度。
+
 | WALL-E 风格 | Marvin V4 |
 | --- | --- |
 | ![WALL-E 模型预览](models/walle/assembly.png) | ![Marvin V4 模型预览](models/marvin-v4/装配预览.png) |
@@ -66,7 +68,7 @@ LICENSES/                 模型、上游软件和字体的许可全文
 
 - **软件和 Python 建模工具：**[MIT](LICENSE)。来自小智的代码保留 [原 MIT 声明](LICENSES/xiaozhi-MIT.txt)。
 - **模型设计文件与装配图文：**[CC BY-SA 4.0](LICENSES/CC-BY-SA-4.0.txt)，见 [模型授权范围](models/LICENSE.md)。署名可使用 `samaritan1998 / esp32-desktop-robot` 并链接本仓库；改作请注明修改。
-- **装配海报：**`docs/images/*-assembly-guide.png` 同样使用 CC BY-SA 4.0，见 [图像许可](docs/images/LICENSE.md)。
+- **装配海报与垫片放大图：**`docs/images/*-assembly-guide.png` 和 `docs/images/marvin-v4-shim-guide.png` 同样使用 CC BY-SA 4.0，见 [图像许可](docs/images/LICENSE.md)。
 - **`face_glyphs.h` 中文字模：**Noto Sans CJK SC 的位图子集，使用 [SIL OFL 1.1](LICENSES/OFL-1.1-NotoSansCJK.txt)，不受软件 MIT 许可覆盖。
 - 其他依赖适用各自许可证，见 [第三方声明](THIRD_PARTY_NOTICES.md)。
 
